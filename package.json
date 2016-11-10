@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Learn Elm lang",
   "main": "elm.js",
-  "scripts": {},
+  "scripts": {
+    "start": "elm-reactor"
+  },
   "author": "",
   "license": "MIT"
 }
