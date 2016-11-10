@@ -1,0 +1,9 @@
+{
+  "name": "elm-sandbox",
+  "version": "1.0.0",
+  "description": "Learn Elm lang",
+  "main": "elm.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT"
+}
