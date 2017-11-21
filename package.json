@@ -4,13 +4,12 @@
   "description": "Learn Elm lang",
   "main": "elm.js",
   "scripts": {
-    "start": "elm-reactor",
-    "test": "elm-test"
+    "start": "elm-live --output=elm.js src/Main.elm --pushstate --open --debug"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "elm": "^0.18.0",
-    "elm-test": "^0.18.0"
+    "elm-live": "^2.7.5"
   }
 }
