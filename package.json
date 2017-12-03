@@ -2,14 +2,21 @@
   "name": "elm-sandbox",
   "version": "1.0.0",
   "description": "Learn Elm lang",
-  "main": "elm.js",
+  "main": "main.js",
   "scripts": {
-    "start": "elm-reactor",
-    "fmt": "elm-format src"
+    "start": "electron .",
+    "reactor": "elm-reactor",
+    "fmt": "elm-format src",
+    "watch": "npm start & npm run elm:watch & wait",
+    "elm": "elm make src/Main.elm --output elm.js || true",
+    "elm:watch": "chokidar '**/*.elm' -c 'npm run elm'"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "chokidar": "^2.0.4",
+    "chokidar-cli": "^1.2.1",
+    "electron": "^3.0.6",
     "elm": "^0.18.0",
     "elm-format": "^0.8.0"
   }
